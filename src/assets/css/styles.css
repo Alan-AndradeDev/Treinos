@@ -8,14 +8,14 @@
   overflow: hidden;
   z-index: -1;
 }
-
+ /*inset: -20px é equivalente a: -20px em todas as direções ou 
+  left: -20px, top: -20px, right: -20px, bottom: -20px
+  Se remover o inset a imagem some pois a imagem não tem um tamanho definido em before, então ele pega o tamanho do ".background": width: 100% e height: 100%
+  */
 .background::before {
   content: '';
   position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
+  inset: -20px;
   background-image: url(/src/assets/imagens/Japan\ by\ Aleksandar\ Pasaric.jpg);
   background-size: cover;
   background-position: center;
