@@ -1,4 +1,19 @@
-
+.titles{
+  justify-content: center;
+  margin: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: grey;
+  text-align: center;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.titles:hover{
+  
+}
 .background {
   position: absolute;
   top: 0;
