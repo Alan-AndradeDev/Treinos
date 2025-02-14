@@ -12,7 +12,7 @@
   transition-duration: 0.5s;
 }
 .titles:hover{
-  
+  background-color: black;
 }
 .background {
   position: absolute;
