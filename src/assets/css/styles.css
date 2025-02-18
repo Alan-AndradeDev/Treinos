@@ -40,17 +40,17 @@ a:hover{
   text-decoration: underline;
     color: purple;
 }
-.main_container{
+
+.deepseek, .chatgpt, .gemini{
   margin: 20px;
   padding: 20px;
   box-shadow: 3px 3px 10px;
   border-radius: 10px;
-}
-.basico{
   h2{
     margin-bottom: 20px;
   }
   p{
     text-indent: 20px;
+    text-align: justify;
   }
 }
