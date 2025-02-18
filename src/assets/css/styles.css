@@ -1,7 +1,55 @@
 main{
   margin-top: 10px;
 }
+.background{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: -1;
+}
+.background::before{
+content: '';
+position: absolute;
+inset: -20px;
+background-position: center;
+background-size: cover;
+filter: blur(10px);
+}
+@media (prefers-color-scheme:dark){
+.background::before{
+  background-image: url(/src/assets/imagens/Qihong.jpg);
+}  
+a{
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+a:hover{
+  color: aqua;
+}
 
+.deepseek, .chatgpt, .gemini{
+  background-color: rgba(255, 255, 255, 0.089);
+  h2,p{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black;
+  }
+}
+
+}
+@media (prefers-color-scheme:light){
+  .background::before{
+    background-image: url(/src/assets/imagens/Pixabay.jpg);
+  }  
+  a{
+    color: blue;
+  }
+  a:hover{
+    color: purple ;
+  }
+}
 .titles{
   margin-top: 10px;
   text-align: center;
@@ -33,12 +81,10 @@ main{
 }
 
 a{
-  color: blue;
     text-decoration: none;
 }
 a:hover{
   text-decoration: underline;
-    color: purple;
 }
 
 .deepseek, .chatgpt, .gemini{
