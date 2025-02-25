@@ -31,7 +31,14 @@ window.alert('A soma dos números é: ${s}');
  * media>= 7 ? "Aprovado" : "Reprovado"
  */
 //Escrever no documento
-let nome = window.prompt('Digite o seu nome: ');
-document.write(`Nome minúsculo: ${nome.toLowerCase()}</br>`);
-document.write(`Nome maiúsculo: ${nome.toUpperCase()}`);
+let nome = document.getElementById('nome');
+nome.innerHTML = prompt("Digite o nome correto: ");
 
+let resultado = document.getElementById('resultado');
+
+if(nome.innerHTML == "Alan Andrade"){
+    resultado.innerHTML = "Você acertou o nome!"
+}
+else{
+ resultado.innerHTML = "Nome Incorreto!"
+}
