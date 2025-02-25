@@ -1,0 +1,46 @@
+.main-container{
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(22, 22, 22);
+    p{
+        margin-top: 10px;
+    }
+}
+.tbox-and-button{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    input{
+        width: 300px;
+        margin-right: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgb(22, 22, 22);
+        transition-property: transform;
+        transition-duration: .3s;
+    }
+    button{
+        width: 90px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10px rgb(22, 22, 22);
+        transition-property: transform;
+        transition-duration: .3s;
+    }
+}
+input:focus{
+    border: none;
+    outline: rgb(85, 85, 85) solid 2px;
+    transform: scale(1.2);
+}
+button:hover{
+    transform: scale(1.1);
+}
+button:active{
+    background-color: black;
+    color: white;
+}
