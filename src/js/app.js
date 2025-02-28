@@ -31,3 +31,26 @@ window.alert('A soma dos números é: ${s}');
  * media>= 7 ? "Aprovado" : "Reprovado"
  */
 //Escrever no documento
+let botao = document.getElementById('botao');
+let teste = document.getElementById('teste');
+let contador = 0;
+
+;
+function clicou(){
+    if(contador % 2 == 0){
+        teste.style.backgroundColor="blue";
+    }
+    else{
+        teste.style.backgroundColor="green";
+    }
+    
+}
+function fcontador(){
+    teste.innerHTML = contador
+    contador++;
+}
+
+botao.addEventListener("click",
+    fcontador
+)
+botao.addEventListener('click', clicou)
